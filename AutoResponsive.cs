@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
 public class AutoResponsive : EditorWindow
 {
     private static bool m_toggleSwitch = false;
@@ -94,3 +95,4 @@ public class AutoResponsive : EditorWindow
         _selectGameobject.offsetMax = Vector2.zero;
     }
 }
+#endif
